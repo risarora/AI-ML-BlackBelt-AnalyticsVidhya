@@ -1,0 +1,43 @@
+Given a random generator that produces a number 1 to 5 uniformly, write a function that produces a number from 1 to 7 uniformly.
+Segment a long string into a set of valid words using a dictionary. Return false if the string cannot be segmented. What is the complexity of your solution?
+How many lines do you think a LinkedIn users’ daily login table has?
+How many active members in LinkedIn right now? What is the business model at LinkedIn?
+How many cubes are exposed in a Rubik’s cube?
+There is a significant increase in LinkedIn signups in this month. How much of this will you attribute to the changes you made in signup process. What data-points would you look into to confirm/deny this?
+Which part of our product you dislike most? Then can you think of the reasons why we decided to make it that way? And how would you quantify its badness (goodness)? How would you fix it? And why it will fix it?
+Find the second largest element in a Binary Search Tree
+Find out k most frequent numbers from incoming stream of numbers one the fly
+How would you design the PYMK — “people you may know” application of LinkedIn?
+Tell us a LinkedIn product problem. Solve the product problem by designing a multivariate A/B test.
+What product metrics do you construct? How to tell if your experiment is successful?
+What is the optimization problem for a SVM?
+Design and implement Java iterator for nested containers.
+Implement the pow function.
+Describe 3 kernel functions and when to use which of them.
+Generate a sorted vector from two sorted vectors.
+Design a recommendation engine for jobs.
+Describe collaborative filtering.
+Describe the different classification and prediction models. (k-means clustering, bayesian model,
+decision trees )
+
+
+21 Statistical Concepts Explained in Simple English
+https://www.datasciencecentral.com/profiles/blogs/29-statistical-concepts-explained-in-simple-english-part-4
+
+Content Validity (Logical or Rational Validity)
+Contingency Coefficient: Definition
+Continuous Probability Distribution
+Continuous Variable Definition (Continuous Data)
+Contour Plots: Definition, Examples
+Control Group: Definition, Examples and Types
+Control Variable: Simple Definition
+Convenience Sampling (Accidental Sampling): Definition, Examples
+Convergent Validity and Discriminant Validity: Definition, Examples
+Cook's Distance / Cook's D: Definition, Interpretation
+Correlation Matrix: Definition
+Counterbalancing in Research
+Covariance in Statistics: What is it? Example
+Covariate Definition in Statistics
+
+
+https://www.techrepublic.com/article/10-questions-machine-learning-engineers-can-expect-in-a-job-interview/

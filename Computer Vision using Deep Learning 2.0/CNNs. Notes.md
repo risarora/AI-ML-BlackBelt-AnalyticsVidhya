@@ -83,7 +83,51 @@ C Stride
 D Number of Pooling Filters
 E All of the above
 
-https://adeshpande3.github.io/adeshpande3.github.io/A-Beginner's-Guide-To-Understanding-Convolutional-Neural-Networks/
+
+## Data Augumentation
+CNN Model Performnace Limitations and how to overcome
+Less Training Data
+
+
+#### Popular Augmentation Techniques
+
+
+  1. featurewise_centre           - Entire Dataset
+  * samplewise_centre            - Sample of the Dataset
+  * featurewise_std_normalization  - Entire Dataset
+  * samplewise_std_normalization   - Sample of the Dataset
+  * Rotation
+    * rotation_range
+  * Shift fractions or pixels
+    * width_shift_range
+    * height_shift range
+  * sheer_range
+    done in anti clock wise direction as per the number of degrees specified
+  * zoom_range
+  * Flipping
+    * horizontal_flip
+    * Vertical_flip
+    * Transpose
+  * Noise
+    * **Gaussian Noise**
+Over-fitting usually happens when your neural network tries to learn high frequency features (patterns that occur a lot) that may not be useful. Gaussian noise, which has zero mean, essentially has data points in all frequencies, effectively distorting the high frequency features. This also means that lower frequency components (usually, your intended data) are also distorted, but your neural network can learn to look past that. Adding just the right amount of noise can enhance the learning capability.
+
+    * Salt and Pepper noise
+    Salt and Pepper noise refers to addition of white and black dots in the image.
+  * Lighting condition
+  * Perspective transform:   
+      In perspective transform, we try to project image from a different point of view.
+
+  ### Advanced Augmentation Techniques
+  Conditional GANs to the rescue!
+  Neural style transfer
+
+
+
+https://medium.com/nanonets/how-to-use-deep-learning-when-you-have-limited-data-part-2-data-augmentation-c26971dc8ced
+
+
+"https://adeshpande3.github.io/adeshpande3.github.io/A-Beginner\'s-Guide-To-Understanding-Convolutional-Neural-Networks/"
 
 # Mentorship best practices
 

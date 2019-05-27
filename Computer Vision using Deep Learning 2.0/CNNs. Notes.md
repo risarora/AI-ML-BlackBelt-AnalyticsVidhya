@@ -1,4 +1,4 @@
-CNNs. Notes
+# CNNs Notes
 
 ### Different types of filters in CNNs
 

@@ -168,6 +168,32 @@ Over-fitting usually happens when your neural network tries to learn high freque
   Neural style transfer
 
 
+## High Variation in Data
+
+1. Images have different dimensions
+* resize
+load_images :keras
+resize : skimage
+
+2. Images have same dimensions but different pixel value ranges
+Rescale : Divide all pixes with the maximum Pixel Value
+
+
+
+## Overfitting
+Very high performance in training data but low performance in validation set.
+
+* Dropout -  
+* Early Stopping
+
+## Undefitting
+
+
+## Training Time too high
+## No appropriate Architecture for the problem
+## Wrong Evaluation Metrics for the problem
+
+
 
 
 

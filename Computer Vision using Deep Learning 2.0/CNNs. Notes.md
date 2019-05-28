@@ -234,18 +234,19 @@ It is a Layered NN  Architecture.
 First 13 Layers are CNN with pooling layers in the middle after 2, 4, 7 , 10 and 13th Layers.
 The last three being the Dense Layers.
 
-GoogLeNet (Inception V1)
+#### GoogLeNet (Inception V1)
 
-ResNet50  
+#### ResNet50  
 Contains Identity block and convolution block?
 
-## Wrong Evaluation Metrics for the problem
+## Evaluation Metrics for the problem
 
 accuracy
 * Recall - When we want to focus
 * Precision - When we want to focus false positive
 * F1 Score - When we want to focus on False Positive and False Negative. It is HM of Precision and
 Recall
-* AUC-ROC Curve - Ratio of TPR and FPR
-  Works on Probabilities
+* AUC-ROC Curve - AUC-ROC represents the Area Under the Curve between the ratio of TPR(True Positive
+Rate) and FPR(False Positive Rate)Works on Probabilities Works on Probabilities
+
 * Log Loss - Penalize a model in exponential form on the basis of the confidence of the model.

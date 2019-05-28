@@ -187,15 +187,68 @@ Very high performance in training data but low performance in validation set.
 * Early Stopping
 
 ## Undefitting
-
+* Hyperparameter Tuning
+  * Hidden Layers    by  Increasing the number of Hidden Layers
+  * Neurons in a Layer  by  Increasing the number of Neurons in the layers
+  * Epochs  by  Increasing the number of Epochs  
+  * Optimizer by trying different Optimizers
+  * Data Related Issues
+    by Scaling the data from -1 to +1
 
 ## Training Time too high
+A neural network takes too much training time to train. The Training and the validation error are in
+ sync.
+* Change in Data Distribution across layers
+Hidden activation changes are during back propagation called _internal covariant shift._
+_Batch Normalization_ is added after linear transformation to prevent shifting of the weights of the
+hidden layers.
+Batch normalization sets the mean to zero and variance as One.
+
+What is Internal Covariate shift in Deep Learning?
+Change in Data Distribution across deeper layers of the network
+One of the reasons due to which Neural Networks especially CNNs tend to take a lot of time to
+converge
+
 ## No appropriate Architecture for the problem
+
+* New problem
+* Not enough data
+
+Most computer vision problems can be broken down into two categories <mark>Classification/Regression</mark> and
+<mark>Detection / Segmentation</mark>.
+Some of the popular publically available solutions to these problems are :-
+
+
+Classification/Regression | Detection / Segmentation
+---|---
+VGG16 | Mask R-CNNs
+VGG19 | YOLO v3
+ResNet | SSD
+Xception | RetinaNet
+Inception | Deep Lab
+NASNet|
+
+#### VGG16
+** VGG16 ** First NN to reach accuracy close to human vision (5%)  i.e. accuracy of 7.4 %.
+It is a Layered NN  Architecture.
+First 13 Layers are CNN with pooling layers in the middle after 2, 4, 7 , 10 and 13th Layers.
+The last three being the Dense Layers.
+
+GoogLeNet (Inception V1)
+
+ResNet50  
+Contains Identity block and convolution block?
+
 ## Wrong Evaluation Metrics for the problem
 
-
-
-
+accuracy
+* Recall - When we want to focus
+* Precision - When we want to focus false positive
+* F1 Score - When we want to focus on False Positive and False Negative. It is HM of Precision and
+Recall
+* AUC-ROC Curve - Ratio of TPR and FPR
+  Works on Probabilities
+* Log Loss - Penalize a model in exponential form on the basis of the confidence of the model.
 
 # Mentorship best practices
 

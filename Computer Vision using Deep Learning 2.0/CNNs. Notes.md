@@ -132,10 +132,10 @@ https://medium.com/nanonets/how-to-use-deep-learning-when-you-have-limited-data-
 
 # CNN Model Performance Limitations and how to overcome
 
-## Less Training Data
-### Data Augumentation
-#### Popular Augmentation Techniques
+### Less Training Data
+#### Data Augumentation
 
+* Popular Augmentation Techniques
 
   1. featurewise_centre           - Entire Dataset
   * samplewise_centre            - Sample of the Dataset
@@ -153,7 +153,7 @@ https://medium.com/nanonets/how-to-use-deep-learning-when-you-have-limited-data-
     * horizontal_flip
     * Vertical_flip
     * Transpose
-  * Noise
+  * Add Noise to the data
     * **Gaussian Noise**
 Over-fitting usually happens when your neural network tries to learn high frequency features (patterns that occur a lot) that may not be useful. Gaussian noise, which has zero mean, essentially has data points in all frequencies, effectively distorting the high frequency features. This also means that lower frequency components (usually, your intended data) are also distorted, but your neural network can learn to look past that. Adding just the right amount of noise can enhance the learning capability.
 
@@ -168,7 +168,7 @@ Over-fitting usually happens when your neural network tries to learn high freque
   Neural style transfer
 
 
-## High Variation in Data
+### High Variation in Data
 
 1. Images have different dimensions
 * resize
@@ -180,13 +180,13 @@ Rescale : Divide all pixes with the maximum Pixel Value
 
 
 
-## Overfitting
+### Overfitting
 Very high performance in training data but low performance in validation set.
 
 * Dropout -  
 * Early Stopping
 
-## Undefitting
+### Undefitting
 * Hyperparameter Tuning
   * Hidden Layers    by  Increasing the number of Hidden Layers
   * Neurons in a Layer  by  Increasing the number of Neurons in the layers
@@ -195,7 +195,7 @@ Very high performance in training data but low performance in validation set.
   * Data Related Issues
     by Scaling the data from -1 to +1
 
-## Training Time too high
+### Training Time too high
 A neural network takes too much training time to train. The Training and the validation error are in
  sync.
 * Change in Data Distribution across layers
@@ -209,7 +209,7 @@ Change in Data Distribution across deeper layers of the network
 One of the reasons due to which Neural Networks especially CNNs tend to take a lot of time to
 converge
 
-## No appropriate Architecture for the problem
+### No appropriate Architecture for the problem
 
 * New problem
 * Not enough data
@@ -239,14 +239,13 @@ The last three being the Dense Layers.
 #### ResNet50  
 Contains Identity block and convolution block?
 
-## Evaluation Metrics for the problem
+### Evaluation Metrics for the problem
 
-accuracy
-* Recall - When we want to focus
-* Precision - When we want to focus false positive
-* F1 Score - When we want to focus on False Positive and False Negative. It is HM of Precision and
+* **Accuracy** - Ratio of Correct vs Total Number of Predictions
+* **Recall** - When we want to focus on false Negatives
+* **Precision** - When we want to focus false Positive
+* **F1 Score** - When we want to focus on False Positive and False Negative. It is HM of Precision and
 Recall
-* AUC-ROC Curve - AUC-ROC represents the Area Under the Curve between the ratio of TPR(True Positive
+* **AUC-ROC Curve** - AUC-ROC represents the Area Under the Curve between the ratio of TPR(True Positive
 Rate) and FPR(False Positive Rate)Works on Probabilities Works on Probabilities
-
-* Log Loss - Penalize a model in exponential form on the basis of the confidence of the model.
+* **Log Loss** - Penalize a model in exponential form on the basis of the confidence of the model.

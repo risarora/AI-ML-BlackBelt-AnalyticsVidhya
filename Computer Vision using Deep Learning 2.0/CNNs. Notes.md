@@ -249,3 +249,20 @@ Recall
 * **AUC-ROC Curve** - AUC-ROC represents the Area Under the Curve between the ratio of TPR(True Positive
 Rate) and FPR(False Positive Rate)Works on Probabilities Works on Probabilities
 * **Log Loss** - Penalize a model in exponential form on the basis of the confidence of the model.
+
+### Evaluation Metrics for Regression Task
+* **MAE** <mark>mean_absolute_error</mark>
+* **RMSE** <mark>mean_squared_error</mark>
+* **Cosine Similarity** <mark>cosine_proximity</mark>
+
+
+
+## List of discrete distributions
+Maximum Likely Estimator
+  Likelihood function  
+  Poisson distribution
+  Bernoulli distribution
+  Binomial distribution
+  Exponential distribution
+  Gamma distribution
+  Probability density function

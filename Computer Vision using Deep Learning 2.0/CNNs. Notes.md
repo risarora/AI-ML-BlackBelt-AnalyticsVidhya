@@ -266,3 +266,47 @@ Maximum Likely Estimator
   Exponential distribution
   Gamma distribution
   Probability density function
+
+## Types of Machine Learning Problems
+1. Image Classification
+  * Binary Classification
+  * Multi class Classification
+  * **Approach :-**
+    * Read the image as numpy Array
+    * Build NN Model
+    * Apply Sigmoid/Softmax Activation Function at the last layer
+* Image Regression
+  * Age Prediction
+  * Counting Occurances
+    * Number of Participants in a Hall
+    * **Approach**
+      * Read the image as numpy Array
+      * Build NN Model
+      * Apply Linear Activation Function at the last layer
+* Object Detection
+ * Types
+    * Single Object  Detection
+    * Multiple Object Detection - Same class
+    * Multiple Object Detection - Multiple Classes
+  * **Approach**
+    * Classification and Regression Problem after dividing image in patches.
+* Action Recognition
+  * **Approach**
+    * Object Detection
+    * Action Recognition
+* Image Captioning
+  * **Approach :-**
+    * Action Recognition and Text Summarization
+* Image Segmentation
+  * **Approach**
+    * Pixel Level Classification on patch of pixels
+#### Approach to solve Computer Vision problems
+
+Computer Vision Problem | Classification | Regrression
+---|---|---
+Image Classification |Yes |No
+Image Regression |No |Yes
+Object Detection |Yes |Yes
+Action Recognition |Yes |No
+Image Captioning |Yes |No
+Image Segmentation |Yes |Yes

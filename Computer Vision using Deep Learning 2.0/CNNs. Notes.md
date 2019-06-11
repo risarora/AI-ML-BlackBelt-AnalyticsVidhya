@@ -1,6 +1,166 @@
-# CNNs Notes
+# Computer Vision  Notes
+
+## Intial Setup
+
+* **git package download**
+
+```
+git clone https://github.com/risarora/CV101.git
+Username: your_username
+Password: your_token
+
+```
+
+### Install coda
+
+conda install -c anaconda tensorflow-gpu
+
+```
+conda install -c anaconda tensorflow-gpu
+
+crestle@cju6sy2ow001b0130m6d4e1th-87965598c-g4cnr:~$ conda install -c anaconda tensorflow-gpu
+
+Collecting package metadata: done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.6.8
+  latest version: 4.6.14
+
+Please update conda by running
+
+    $ conda update -n base conda
+
+
+
+## Package Plan ##
+
+  environment location: /opt/conda
+
+  added / updated specs:
+    - tensorflow-gpu
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    _tflow_select-2.1.0        |              gpu           2 KB  anaconda
+    absl-py-0.7.1              |           py36_0         157 KB  anaconda
+    astor-0.7.1                |           py36_0          43 KB  anaconda
+    c-ares-1.15.0              |       h7b6447c_1          98 KB  anaconda
+    ca-certificates-2019.5.15  |                0         133 KB  anaconda
+    certifi-2019.3.9           |           py36_0         155 KB  anaconda
+    cupti-9.0.176              |                0         1.6 MB  anaconda
+    gast-0.2.2                 |           py36_0         138 KB  anaconda
+    grpcio-1.16.1              |   py36hf8bcb03_1         1.1 MB  anaconda
+    keras-applications-1.0.8   |             py_0          33 KB  anaconda
+    keras-preprocessing-1.1.0  |             py_1          36 KB  anaconda
+    markdown-3.1.1             |           py36_0         113 KB  anaconda
+    mock-3.0.5                 |           py36_0          47 KB  anaconda
+    openssl-1.1.1              |       h7b6447c_0         5.0 MB  anaconda
+    tensorboard-1.13.1         |   py36hf484d3e_0         3.3 MB  anaconda
+    tensorflow-1.13.1          |gpu_py36h26cf82e_0           4 KB  anaconda
+    tensorflow-base-1.13.1     |gpu_py36h8f37b9b_0       271.6 MB  anaconda
+    tensorflow-estimator-1.13.0|             py_0         205 KB  anaconda
+    tensorflow-gpu-1.13.1      |       h0d30ee6_0           2 KB  anaconda
+    termcolor-1.1.0            |           py36_1           7 KB  anaconda
+    werkzeug-0.15.4            |             py_0         262 KB  anaconda
+    ------------------------------------------------------------
+                                           Total:       284.0 MB
+
+The following NEW packages will be INSTALLED:
+
+  _tflow_select      anaconda/linux-64::_tflow_select-2.1.0-gpu
+  absl-py            anaconda/linux-64::absl-py-0.7.1-py36_0
+  astor              anaconda/linux-64::astor-0.7.1-py36_0
+  c-ares             anaconda/linux-64::c-ares-1.15.0-h7b6447c_1
+  cupti              anaconda/linux-64::cupti-9.0.176-0
+  gast               anaconda/linux-64::gast-0.2.2-py36_0
+  grpcio             anaconda/linux-64::grpcio-1.16.1-py36hf8bcb03_1
+  keras-applications anaconda/noarch::keras-applications-1.0.8-py_0
+  keras-preprocessi~ anaconda/noarch::keras-preprocessing-1.1.0-py_1
+  markdown           anaconda/linux-64::markdown-3.1.1-py36_0
+  mock               anaconda/linux-64::mock-3.0.5-py36_0
+  tensorboard        anaconda/linux-64::tensorboard-1.13.1-py36hf484d3e_0
+  tensorflow         anaconda/linux-64::tensorflow-1.13.1-gpu_py36h26cf82e_0
+  tensorflow-base    anaconda/linux-64::tensorflow-base-1.13.1-gpu_py36h8f37b9b_0
+  tensorflow-estima~ anaconda/noarch::tensorflow-estimator-1.13.0-py_0
+  tensorflow-gpu     anaconda/linux-64::tensorflow-gpu-1.13.1-h0d30ee6_0
+  termcolor          anaconda/linux-64::termcolor-1.1.0-py36_1
+  werkzeug           anaconda/noarch::werkzeug-0.15.4-py_0
+
+The following packages will be UPDATED:
+
+  ca-certificates    conda-forge::ca-certificates-2019.3.9~ --> anaconda::ca-certificates-2019.5.15-0
+  openssl            conda-forge::openssl-1.1.1b-h14c3975_1 --> anaconda::openssl-1.1.1-h7b6447c_0
+
+The following packages will be SUPERSEDED by a higher-priority channel:
+
+  certifi                                       conda-forge --> anaconda
+
+
+Proceed ([y]/n)?
+
+Downloading and Extracting Packages
+mock-3.0.5           | 47 KB     | ################################################################################ | 100%
+ca-certificates-2019 | 133 KB    | ################################################################################ | 100%
+_tflow_select-2.1.0  | 2 KB      | ################################################################################ | 100%
+cupti-9.0.176        | 1.6 MB    | ################################################################################ | 100%
+markdown-3.1.1       | 113 KB    | ################################################################################ | 100%
+tensorflow-gpu-1.13. | 2 KB      | ################################################################################ | 100%
+c-ares-1.15.0        | 98 KB     | ################################################################################ | 100%
+tensorflow-base-1.13 | 271.6 MB  | ################################################################################ | 100%
+tensorboard-1.13.1   | 3.3 MB    | ################################################################################ | 100%
+gast-0.2.2           | 138 KB    | ################################################################################ | 100%
+grpcio-1.16.1        | 1.1 MB    | ################################################################################ | 100%
+tensorflow-estimator | 205 KB    | ################################################################################ | 100%
+astor-0.7.1          | 43 KB     | ################################################################################ | 100%
+tensorflow-1.13.1    | 4 KB      | ################################################################################ | 100%
+certifi-2019.3.9     | 155 KB    | ################################################################################ | 100%
+absl-py-0.7.1        | 157 KB    | ################################################################################ | 100%
+termcolor-1.1.0      | 7 KB      | ################################################################################ | 100%
+werkzeug-0.15.4      | 262 KB    | ################################################################################ | 100%
+openssl-1.1.1        | 5.0 MB    | ################################################################################ | 100%
+keras-preprocessing- | 36 KB     | ################################################################################ | 100%
+keras-applications-1 | 33 KB     | ################################################################################ | 100%
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+crestle@cju6sy2ow001b0130m6d4e1th-87965598c-g4cnr:~$
+
+```
+
+### GPU status 
+**nvidia-smi**
+
+```
+
+crestle@cju6sy2ow001b0130m6d4e1th-87965598c-g4cnr:~$ nvidia-smi
+Tue Jun 11 17:11:01 2019
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 384.111                Driver Version: 384.111                   |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla P4            Off  | 00000000:00:07.0 Off |                    0 |
+| N/A   31C    P8     6W /  75W |      0MiB /  7606MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+crestle@cju6sy2ow001b0130m6d4e1th-87965598c-g4cnr:~$
+
+```
 
 ### Different types of filters in CNNs
+
 
 * Right Sobel Filter
 * Top Sobel Filter

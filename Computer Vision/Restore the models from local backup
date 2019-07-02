@@ -1,0 +1,5 @@
+# Restore the models from local backup
+!mkdir -p $HOME/.keras/models
+! cp /home/jovyan/work/models/* $HOME/.keras/models/
+
+!ls -ltra $HOME/.keras/models

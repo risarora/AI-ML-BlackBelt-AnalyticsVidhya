@@ -52,4 +52,20 @@ Used for :-
 * Named entity recognition
 * Question Answering System
 * Coreference Resolution
-*
+
+
+## Named entity recognition
+* It is a two step process
+* Named Entity Extraction
+* Names Entity Classification
+
+#### Named Entity Extraction
+* Identification of noun phrases.
+* Classify the Named Entities on various classes
+* Entity Linking - Associate an entity to a dictionary(Ontologies)
+
+* Issues faced when classifying NER
+  * Updates
+  * Name Variations
+  * Multiple categories for same name
+  * Non Capitilization
